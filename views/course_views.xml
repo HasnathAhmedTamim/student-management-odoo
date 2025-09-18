@@ -1,0 +1,33 @@
+<odoo>
+    <record id="view_course_tree" model="ir.ui.view">
+        <field name="name">student.management.course.tree</field>
+        <field name="model">student.management.course</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="credit"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_course_form" model="ir.ui.view">
+        <field name="name">student.management.course.form</field>
+        <field name="model">student.management.course</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="credit"/>
+                        <field name="student_ids" widget="many2many_tags"/>
+                    </group>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_show_students" type="object" string="Show Enrolled Students" class="oe_stat_button" icon="fa-users"/>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
