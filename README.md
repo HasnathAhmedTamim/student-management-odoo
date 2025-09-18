@@ -50,6 +50,3 @@ This module allows you to manage students and courses, enroll students in multip
 ## Bonus (Optional)
 - Add a button on the student form to show enrolled courses.
 - Create a report/page to show all students in a specific course.
-
-## Author
-<Tamim>
